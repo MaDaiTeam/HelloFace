@@ -1,0 +1,215 @@
+1、语言
+   字：保留字，标识字
+   句：存储数据
+       处理数据(主要的核心)运算符号
+       控制流程（控制语句）
+   块：
+   	类块
+   	方法块
+   	匿名块
+2、思想
+   A：面向过程
+   	数据要么全局，要么局部（临时，参数）
+   	c r1 r2 r3 r4  ()
+   	m1() ->m2() ->m3() ->m4()
+   	
+   B：面向对象
+   	对象级的变量=成员变量
+   	c
+   	{ 类
+   	r1 r2
+   	m1() m2()
+   	}
+   	
+   	{类
+   	r3
+   	m3()
+   	m4()
+   	}
+   	
+   	r4
+   	
+
+   	对象.成员
+   	
+   	对象.作用域限定。
+   	
+   	int   age1,age2,.....age37;
+   	
+   	grow1(),grow2(),.....grow37()
+   	
+   	
+   	class Human
+   	{
+   	  int age
+   	  void grow();
+   	}
+   	
+   	
+   	Human man1;
+   	man1.age
+   	man1.grow(0;
+   	
+   	int meth1(){
+   	}
+   	
+   	int meth2(int a)
+   	{
+   	
+   	}
+   	
+   	main(0)
+   	{
+   		int r=meth1();
+   		//假设r返回出问题,meth2没有价值
+   		int r2=meth2(r);
+   	}
+   	
+   	A
+   	{
+   		int r1;
+   		meth(){
+   			....?
+   		}
+   	}
+   	
+   	
+   	B
+   	{
+   		
+   		int  r2;	//后置条件
+   		int r1;//前置条件
+   		meth(){
+   			r1,r2;
+   		}
+   	}
+   	
+   	A a;
+   	B b;
+   	a.meth();
+   	
+   	b.meth2(a.r1);
+   	
+   	Super{
+   	m1
+   	m2
+   	m3
+   	}
+   	
+   	
+   	Sub{
+   	m1
+   	m2
+   	m3
+   	m4
+   	m5
+   	}
+   	
+   	
+   	Sub extends Super{
+   	m4
+   	m5
+   	}
+   	
+   	
+   	编码：不考虑方法之间的关系,降低了耦合度
+   	组装
+   	
+ 	总结：面向对象。降低代码的耦合程度。
+ 	1、封装：类	块封装可以降低。
+ 	2、继承：子类，父类 增加程序的扩展性。复用性
+ 	3、多态：接口	降低耦合	
+ 	Tools
+ 	{
+ 		a1;
+ 		a2;
+ 		m1();
+ 		m2();
+ 	}
+   	
+   	ATools{				ITools{
+   		a1;				m1()
+   					}
+   	}
+   	Tools{				NewTools{
+   		a2;			 	a2;
+   		m2(); 				m2();
+   	}				}
+   	
+   	3. 数据抽象形成父类
+   	   方法抽象形成接口
+   	一个方法多种实现：多态。
+   	
+   	区分清楚OOA&D与OOP
+
+记录面向对象的分析与设计。
+	汉语
+	Java
+	UML（Rotional Rose,Powerdisgner,Eclipse UML插件,Visio）
+   	
+3.基础库	boost（beyond of stl）
+	IO库
+	异常
+	断言与调试
+	数学运算
+	数据结构
+	多线线程
+	内存管理
+	
+
+4.应用库
+	GUI库(Win32+MFC,KDE+GTK+QT)
+	Socket库(系统级别(inet,raw,ip,tcp,udp,arp)+PCap)
+	数据库(ODBC+OCI+Pro*C)
+	XML处理+WebService
+	
+	组件开发库(DCOM/COM+,Corba,RMI,IIOP)
+	
+	3D库(sgi/OpenGL,DirectX/Surface)
+	
+操作系统：
+	驱动硬件+进程管理+文件系统+IO管理+内存管理
+5、框架
+	Android框架
+	iOS框架corelet框架
+	
+
+6、软件统一过程
+	前置条件：需求
+	A1、需求说明
+	A2、需求初始化分析（用例）
+	A3、概要设计（功能模型+ER模型）
+	A4、详细设计（类图，时序图、UI、参数、目录结构，配置，SQL脚本）
+	A5、测试方案
+	A6、估计工作量（人天，任务分配）
+	A7、分配任务
+	A8、搭建项目结构
+	
+	编码（7-9天）
+	
+	A9、集成每个组员的模块并测试
+	A10、打包
+	A11、用户手册
+	
+要求：
+    1.一套完整文档。5-7个文档。
+    2、一套代码。5000-10000行代码。
+    
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   	
+   	
